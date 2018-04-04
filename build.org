@@ -1,0 +1,317 @@
+* Directories
+
+  utils/:
+  utils/curl: the curl source code
+  
+  utils/nghttp2: the nghttp2 source code
+
+
+  curlbin/: the latest libcurl and test code
+
+  libdash/: the libdash source code
+    git clone ssh://menxiao@git.corp.adobe.com:/menxiao/libdash # kpush branch
+
+
+* old information
+
+  remember check if the http/2 is supported after ./configure
+
+  The test program doesn't link to the compiled libraries, so I have
+  to manually link the compiled libraries to the search paths. The
+  target directory is 
+
+  /usr/lib/x86_64-linux-gnu/libcurl.so.4
+  /usr/lib/x86_64-linux-gnu/libcurl.so
+
+
+> HTTP/2 works well on the binary version, not the build version
+
+> Now I can build the example program in curl to perform push
+  operation. 
+  To build the libnghttp2.so
+
+  $ git clone https://github.com/nghttp2/nghttp2
+  $ autoreconf -i
+  $ automake
+  $ autoconf
+  $ ./configure
+  $ make
+
+  To build the libcurl.so
+
+  $ git clone https://github.com/curl/curl
+  $ ./buildconf
+  $ ./configure --prefix=/home/menxiao/kpush/curlbin
+  $ make
+  $ make install
+
+  Now you can build curl program under ~/kpush/curlbin/. Build the
+  program with flag as this
+  
+  CURL_CONFIG := /home/menxiao/kpush/curlbin/bin/curl-config
+  CC := $(shell $(CURL_CONFIG) --cc)
+  LDFLAGS += $(shell $(CURL_CONFIG) --libs)
+  LDFLAGS += -lnghttp2
+  CFLAGS += $(shell $(CURL_CONFIG) --cflags)
+
+  But this really doesn't work, the output program always links to the
+  system one, which resides in
+  "/usr/lib/x86_64-linux-gnu/libcurl.so.4". So I link the compiled
+  libraries in that directory. 
+
+> The example program "http2-serverpush.c" can successfully retrieve
+  the pushed contents from our Jetty server. What we need think is how
+  to attach the content to IChunk. Or we build a cache, every time the
+  the IChunk want to start a new download, we just check the cache
+  first. Sounds good
+
+> Now we can use curl enabled push to download all 120 segments from
+  Jetty server. time to check how to integrate this into libdash
+
+> some notes about libdash:
+  dash.network.IChunk: should be the abstraction of segments
+    string& AbsoluteURI();
+    stirng& Host();
+    size_t Port();
+    string& Path();
+    string& Range();
+    size_t StartByte();
+    size_t EndByte();
+    bool HasByteRange();
+    dash::metrics::HTTPTransactionType GetType();
+
+  dash::metrics::IDASHMetrics:
+    vector<dash::metrics::ITCPConnection *>& GetTCPConnectionList();
+    vector<dash::metrics::IHTTPTransaction *>& GetHTTPTransactionList();
+
+  dash.network.IDownloadableChunk: 
+  <-- dash::network::IChunk
+  <-- dash::metrics::IDASHMetrics
+    bool StartDownload();
+    bool StartDownload(dash::network::IConnection *);
+    void AbortDownload();
+    int Read(uint8_t *, size_t);
+    int Peek(uint8_t *, size_t);
+    int Peek(uint8_t *, size_t, size_t)
+    void AttachDownloadObserver(dash::network::IDownloadObserver *);
+    void DetachDownloadObserver(dash::network::IDownloadObserver *);
+
+  dash::network::AbstractChunk:
+  <-- dash::network::IDownloadableChunk
+    void NotifyDownloadRateChanged();
+    private:
+    vector<IDownloadObserver *> observers;
+    THREAD_HANDLE dlThread;
+    IConnection *connection;
+    helpers::SyncedBlockStream blockStream;
+    CURL *curl;
+    CURLcode response;
+    uint64_t bytesDownloaded;
+    DownloadStateManager stateManager;
+    vector<dash::metrics::TCPConnection *> tcpConnections;
+    vector<dash::metrics::HTTPTransaction *> httpTransactions;
+    static uint32_t BLOCKSIZE;
+    static void* DownloadExternalConnection(void *chunk);
+    static void* DownloadInternalConnection(void *chunk);
+    static size_t CurlResponseCallback(void *contents, size_t size, size_t nmemb, void *userp);
+    static size_t CurlDebugCallback(CURL *curl, curl_infotype infoType, char *data, size_t length, void *userdata);
+    void HandleHeaderOutCallback();
+    void HandleHeaderInCallback(string data);
+
+  dash::mpd::Segment:
+  <-- dash::network::AbstractChunk
+  <-- dash::mpd::Augment
+  
+* [2016-06-28 Tue]
+
+** curl/bin cannot be compiled
+  curlbin/main can not be compiled successfully. Since we reorganize
+  the directory structure and the curl-config can not work correctly. 
+
+  So rebuild the libcurl with new --prefix argument in configure
+  step. 
+
+** Can't rebuild libdash
+   The problem is still caused by reorganizing the directory
+   structure. The qt4 player is also required to rebuild
+
+   #+NAME: rebuild libdash
+   #+BEGIN_SRC bash
+cd ./libdash/libdash
+rm -rf build
+mkdir build
+cd build
+cmake ../
+make
+   #+END_SRC
+
+   #+NAME: rebuild qtsampleplayer
+   #+BEGIN_SRC bash
+cd ./libdash/libdash/qtsampleplayer
+rm -rf build
+mkdir build
+export LIBAVROOT="${PATH_TO_LIBDASH_REPO}/libdash/libav"
+cd build
+cmake ../
+make
+   #+END_SRC
+
+** Can't retrieve the mpd file from our jetty in qt4 player
+   Probably the libxml.so does not support retrieving HTTP document
+   over HTTP/2. So my workaround is to retrieve the MPD file by
+   libcurl, store it locally and then parse it with libxml
+
+   the code is added in libdash/libdash/libdash/source/manager/DASHManager.cpp
+   
+   > Remember add fflush() and fclose, otherwise cannot download the
+     complete document (probably).
+
+** When the "start" is pressed some error prompt out.
+   The error message
+
+   [mov,mp4,m4a,3gp,3g2,mj2 @ 0x10fc820] could not find corresponding track id 1
+   [mov,mp4,m4a,3gp,3g2,mj2 @ 0x10fc820] error reading header
+
+   > To add debug symbol into a cmake build, use the command
+   #+NAME: cmake with debug info
+   #+BEGIN_SRC bash
+cmake -DCMAKE_BUILD_TYPE=Debug ..
+   #+END_SRC
+
+   After adding huge debug message, at least I know that the bug is
+   due to no initialization segment is downloaded. But why the
+   initialization segment is not downloaded? I still need figure it
+   out. 
+
+
+* [2016-07-14 Thu]
+  
+** The qt4 cannot download mpd file
+   Even in the test program, "main", can not the mpd file be fetched. But it is functional to
+   fetch other *.m4s files.
+
+   ./configure --with-nghttp2=yes --prefix=/home/menxiao/work/libdash-kpush/curlbinnew # useless
+
+   The reason is the symbol link "/usr/lib/x86_64-linux-gnu/libcurl.so.4" does not link to the compiled one
+
+   this link is reset every time restart the machine
+
+** The old 'counld not find corresponding track id 1' error
+
+   I suspect that the codec cannot decode our "counter" video, so I use their "bunny" video istead.
+   
+   I download the video segments by parsing the mpd file.
+
+   But the disk space is approaching full status. only 20 GB is assigned at the beginning. So I
+   extend to 100 GB as virtual disk. But this requires not only configuration outside the guest
+   machine, but also manipulation on disk manager tool. 
+   
+   To the end, I mount the disk at "~/work/data" and migrate the bunny video into it
+
+** cannot switch the bit rate
+
+   At first, the problem is we didn't change the base url in mpd file. 
+
+   But even I changed the base url, it cannot switch the video quality. (lacks 200bit mp4 file)
+   
+   It stalls even there is no bit switch
+   
+* [2016-07-19 Tue]
+
+** link to our customized library
+   sudo rm /usr/lib/x86_64-linux-gnu/libcurl.so.4
+   sudo ln -s /home/menxiao/work/libdash-kpush/curlbin/lib/libcurl.so.4.4.0  /usr/lib/x86_64-linux-gnu/libcurl.so.4
+
+   > I strongly suspect that the video stall is due to the transmission failed, which because my naive implementation of
+   libcurl. So I need to clarify the overall structure of the two projects, qt4player and libdash itself.
+
+   Now we need to know how the transmission subsystem works, so I need check the context that how to use the
+   transmission system, i.e., the qt4player. 
+
+   The DASHManager seems to be the hub, it manages a decoder, a buffer, and a receiver. Before the decoder is created,
+   the manager seeks the initial segment from the receiver. It also implements several observers to monitor the decoding
+   events. The observer that cares the segment downloading event only increases the segment count variable
+
+
+* [2016-07-20 Wed]
+
+> DASHReceiver 
+  - The DASHReceiver has a dedicated buffering thread, which is continuously downloading the segments
+  - The DASHReceiver firstly retrieve a ISegment from representationStream, which is got from adaptationsetstream, and
+    then it constructs a MediaObject from the ISegment
+  - AdaptationSetStream is constructed as long as the adaptationset/representation is changed
+
+> MediaObject
+  - The actual downloading operation is performed by ISegment. The MediaObject just attaches a observer on it.
+
+
+* [2016-07-21 Thu]
+
+> Basically the original libdash relies on generating the abstract chunk from the representation parsed from mpd. Then
+  the chunks downloads themselves individually. I am not sure if the stalling phenomenon is related to naively changing
+  the curl_easy interfaces into curl_multi interfaces with http/2 support, but it is not a efficient paradigm to
+  initialize the HTTP/2 connections individually. So I need maintain the global status of a HTTP/2 connection. 
+
+  I design and implement a class "CurlmManager" to maintain the single HTTP/2 connection. It accepts http requests (url,
+  onprogress, oncomplete). CurlmManager has a thread repeatedly performs any committed HTTP transactions. The onprogress
+  is called by curl_multi interface, but we call oncomplete when the transmission is done. 
+
+  The prototype of "CurlmManager" is implemented and tested under directory:
+  
+  curlmanager/
+
+> To enable the c++11 feature in cmake, change the CMakeLists.txt, add
+
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+> The problems are mainly two: 
+  1. occasionally it meets the segment fault, not sure where it is. (Probably it is due to the CURL * is defined from
+     another thread's stack, change it to the fetchThread)
+  2. it still stalls without error report. It always stops at the third segment.
+
+* [2016-07-22 Fri]
+
+> The problems met yesterday is due to not protecting the 'running' flag, so when another AbstractChunk try launching
+the FetchThread very shortly after the first launch from the first AbstractChunk, two FetchThread will be
+instantiated. Using mutex lock to fix this.
+
+> A commit is pushed for successfully running the libdash over HTTP/2
+
+> When integrate push mechanism, and the push write function is set as the FILE *, it fails when performing curlm. Idk
+why and using a dedicated write function will fix this.
+
+> The Jetty server push implementation cannot handle the case that the mpd file is not under the same directory with the
+segment files. I change this to a fast solution that just search the parent directories for mpd file.
+
+> Implement the cache inside the CurlmManager. The idea includes:
+  1. Whenever receiving a PUSH_PROMISE, construct a cache entry and store it in a incomplete cache.
+  2. Whenever the push stream is done, migrate the cache entry from the incomplete cache to a complete cache.
+  3. Whenever a http request comes in, firstly check both the complete and incomplete cache, if has an entry with the
+     same url, cache the request with its callbacks into a waiting queue.
+  4. Launch a checking thread, whenever a entry is put into the complete cache or a http request is sent to the waiting
+     queue wake it up and check if there is a match between them. yes: invoke the corresponding callback with the cached
+     data and destroy the entry. no: keep sleeping.
+
+> There are some further work to do:
+  1. extend the interfaces to support k-push
+  2. control the checking thread
+  3. clean the structs 
+  4. document
+
+
+
+
+
+
+* [2016-08-05 Fri]
+  The problem that the qtplayer can not play the counter video is caused by the mpd file. The generated mpd file from
+  MP4Box has only one line describing the initialization segment, but this can not be parsed by the player/libdash
+  library. So just add the initialized segment to each representation is OK 
+  
+  515326 bps
+
+  ./adjust 68kbps 200
+  can get a good demo effect for libdash player
+
+  ./adjust 70kbps 250
+  can get a good demo effect for primetime html5 player

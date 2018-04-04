@@ -1,0 +1,822 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Fri Jun 24 21:29:25 2016
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (22382 2213 499195 729000) (desktop . "206") "menxiao@menxiao-virtual-machine" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (foreground-color . "#c5c8c6") (background-color . "#1d1f21") (mouse-color . "black") (border-color . "#373b41") (screen-gamma) (line-spacing) (left-fringe . 9) (right-fringe . 9) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen . maximized) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#cc6666") (sticky) (environment) (wg-workgroup-state-table . "Unprintable entity") (wg-current-workgroup-uid . "0H930DT5K2XVCPK8-AP4LA") (wg-previous-workgroup-uid) (frameset--id . "344D-EB5D-ADCD-97B5") (frameset--mini t . t) (height . 48) (width . 150) (modeline . t) (minibuffer . t) (unsplittable) (left . 65) (top . 24) (icon-name) (visibility . t) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 3) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 54) (min-pixel-width-ignore . 36) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 1375) (pixel-height . 858) (total-width . 153) (total-height . 48) (normal-height . 1.0) (normal-width . 1.0) (buffer "DASHManager.cpp<manager>" (selected . t) (hscroll . 0) (fringes 9 9 nil) (margins 2) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 815) (start . 483))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("pars" "mpdpath" "tompd" "service" "getroot" "ondownload" "ondo" "onstart" "init" "failed" "headers" "pushcal" "transfer" "runing" "handles" "segment"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("/home/menxiao/kpush/libdash/libdash/libdash/source/xml/DOMParser.h" "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Managers/MultimediaManager.h" "/home/menxiao/kpush/http2-demo/src/main/webapp/vod/counter.mpd" "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/qtsampleplayer.ui" "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Managers/MultimediaManager.h" "/home/menxiao/kpush/libdash/libdash/libdash/source/network/AbstractChunk.h" "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Input/MediaObject.h" "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Segment.cpp" "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Segment.h" "/home/menxiao/kpush/libdash/libdash/libdash/libdash.vcxproj.filters" "/home/menxiao/kpush/libdash/libdash/libdash/CMakeLists.txt" "/home/menxiao/kpush/libdash/libdash/CMakeLists.txt" "/home/menxiao/kpush/libdash/README.md" "/home/menxiao/kpush/libdash/libdash/libdash/source/network/KPushConnection.cpp" "/home/menxiao/kpush/libdash/libdash/libdash/source/network/KPushConnection.c" "/home/menxiao/kpush/libdash/libdash/libdash/source/network/KPushConnection.h" "/home/menxiao/kpush/libdash/libdash/libdash/source/network/HTTP2Connection.h" "/home/menxiao/kpush/libdash/libdash/libdash_networkpart_test/HTTPConnection.cpp" "/home/menxiao/kpush/libdash/libdash/libdash/source/network/AbstractChunk.h" "/home/menxiao/kpush/curlbin/main.c" "/home/menxiao/.emacs.d/init.el" "/home/menxiao/kpush/curlbin/google.html" "/home/menxiao/.emacs.d/custom/setup-programming.el" "/home/menxiao/kpush/libdash/libdash/libdash/source/libdash.cpp" "~/.emacs_workgroups" "~/kpush/libdash/libdash/libdash/source/network/AbstractChunk.cpp" "~/kpush/libdash/libdash/libdash/source/network/AbstractChunk.h" "~/.emacs.d/custom/setup-programming.el" "~/.emacs.d/init.el" "~/.emacs.d/custom/setup-development.el" "~/.emacs.d/elpa/ggtags-20160617.1840/ggtags-autoloads.el" "~/.emacs.d/elpa/helm-20160623.2215/helm-autoloads.el" "~/.emacs.d/elpa/helm-gtags-20160417.555/helm-gtags-autoloads.el" "~/.emacs.d/elpa/helm-core-20160621.2144/helm-core-autoloads.el" "~/kpush/libdash/libdash/libdash/include/IDownloadableChunk.h" "~/kpush/libdash/libdash/qtsampleplayer/libdashframework/Buffer/AudioChunk.h" "~/kpush/libdash/libdash/libdash/include/IDASHMetrics.h" "~/kpush/libdash/libdash/libdash/include/IChunk.h" "~/kpush/curlbin/main.c" "~/kpush/curl/docs/examples/10-at-a-time.c" "~/kpush/curlbin/http2-serverpush.c" "~/kpush/xmlParser/*eshell*" "~/kpush/curlbin/main" "~/kpush/libdash/docs/libdash-bitdash_whitepaper_v2.docx" "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h" "/usr/include/c++/5/bits/ios_base.h" "/usr/include/c++/5/bits/basic_ios.h" "/usr/include/c++/5/ostream" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/extensions/DashMetricsExtensions.js" "~/kpush/http2-demo/src/main/config/jetty-http2.xml" "~/kpush/http2-demo/src/main/webapp/WEB-INF/web.xml" "~/kpush/http2-demo/src/main/webapp/html5/.gitignore" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/README.md" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/LICENSE.md" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/controllers/RepresentationController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/UTCTiming.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/Segment.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/EventStream.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/Event.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/Dash.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/TimelineConverter.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/DashParser.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/app/js/html/mse/dash/DashParser.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/app/js/html/commonimpl/VideoEngineTimeline.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/ManifestLoader.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/controllers/StreamController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/extensions/DashManifestExtensions.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/models/ManifestModel.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/ManifestUpdater.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/AdaptationSet.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/DashCreate.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/extensions/BaseURLExtensions.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dashjsIncludes.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/controllers/AbrController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/rules/RulesController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/controllers/FragmentController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/rules/SwitchRequest.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/Stream.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/rules/SchedulingRules/ScheduleRulesCollection.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/controllers/ScheduleController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/models/FragmentModel.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dashjsIncludes.json" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/vo/FragmentRequest.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/DashHandler.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/DashAdapter.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/StreamProcessor.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/controllers/BufferController.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/DashContext.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/Context.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/streaming/rules/SchedulingRules/PlaybackTimeRule.js" "~/kpush/xmlParser/counter.mpd" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/Representation.js" "~/kpush/http2-demo/src/main/webapp/html5/dashjs/dash.js/src/dash/vo/Period.js" "~/kpush/xmlParser/XMLParser.java" "~/kpush/jetty.project/jetty-servlets/src/main/java/org/eclipse/jetty/servlets/" "~/kpush/jetty.project/jetty-servlets/src/main/java/org/eclipse/jetty/servlets/mpdutils/MPDNode.java" "~/kpush/jetty.project/jetty-servlets/src/main/java/org/eclipse/jetty/servlets/mpdutils/MPDPeriod.java" "~/kpush/jetty.project/jetty-servlets/src/main/java/org/eclipse/jetty/servlets/mpdutils/MPDRepresentation.java" "~/kpush/xmlParser/makefile" "~/kpush/jetty.project/jetty-servlets/src/main/java/org/eclipse/jetty/servlets/mpdutils/"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/manager/DASHManager.cpp"
+  "DASHManager.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  815
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/xml/DOMParser.cpp"
+  "DOMParser.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1049
+  '(919 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libav/include/libavformat/avformat.h"
+  "avformat.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  32031
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libav/include/libavcodec/avcodec.h"
+  "avcodec.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  157867
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/xml/DOMParser.h"
+  "DOMParser.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1029
+  '(725 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/xml/Node.cpp"
+  "Node.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2558
+  '(23916 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/xml/Node.h"
+  "Node.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  5739
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/http2-demo/src/main/webapp/vod/counter.mpd"
+  "counter.mpd"
+  'nxml-mode
+  '(global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode flyspell-mode goto-address-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode)
+  222
+  '(1 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Managers/MultimediaManager.cpp"
+  "MultimediaManager.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2375
+  '(5254 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/UI/DASHPlayer.cpp"
+  "DASHPlayer.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  5180
+  '(4856 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Managers/MultimediaManager.h"
+  "MultimediaManager.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2671
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IDASHManager.h"
+  "IDASHManager.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1260
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IMPD.h"
+  "IMPD.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3887
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Decoder/LibavDecoder.cpp"
+  "LibavDecoder.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  7731
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash_networkpart_test/PersistentHTTPConnection.cpp"
+  "PersistentHTTPConnection.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3693
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash_networkpart_test/HTTPConnection.cpp"
+  "HTTPConnection.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2349
+  '(899 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Segment.cpp"
+  "Segment.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  777
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/UI/DASHPlayer.h"
+  "DASHPlayer.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3495
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/UI/IDASHPlayerGuiObserver.h"
+  "IDASHPlayerGuiObserver.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1268
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/UI/QtSamplePlayerGui.cpp"
+  "QtSamplePlayerGui.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  7815
+  '(9390 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/BaseUrl.cpp"
+  "BaseUrl.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1381
+  '(1338 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libxml2/include/libxml/xmlreader.h"
+  "xmlreader.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  9717
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/qtsampleplayer.ui"
+  "qtsampleplayer.ui"
+  'nxml-mode
+  '(auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode flyspell-mode goto-address-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode)
+  1058
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Input/MediaObject.cpp"
+  "MediaObject.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1235
+  '(1242 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Input/DASHReceiver.cpp"
+  "DASHReceiver.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  6845
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/network/AbstractChunk.cpp"
+  "AbstractChunk.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3502
+  '(1865 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/network/AbstractChunk.h"
+  "AbstractChunk.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  698
+  '(4138 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/curlbin/main.c"
+  "main.c"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  898
+  '(368 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Managers/MultimediaStream.cpp"
+  "MultimediaStream.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2434
+  '(2306 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Input/DASHReceiver.h"
+  "DASHReceiver.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2703
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IDownloadableChunk.h"
+  "IDownloadableChunk.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1499
+  '(522 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Input/MediaObject.h"
+  "MediaObject.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1080
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Input/DASHManager.cpp"
+  "DASHManager.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2821
+  '(5031 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IRepresentation.h"
+  "IRepresentation.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  11569
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IAdaptationSet.h"
+  "IAdaptationSet.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  11370
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IDownloadObserver.h"
+  "IDownloadObserver.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1661
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/MPD/SegmentListStream.cpp"
+  "SegmentListStream.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1669
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Segment.h"
+  "Segment.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  696
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/SegmentTemplate.cpp"
+  "SegmentTemplate.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  5483
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/SegmentURL.cpp"
+  "SegmentURL.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1620
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/URLType.cpp"
+  "URLType.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1225
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IHTTPTransaction.h"
+  "IHTTPTransaction.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1185
+  '(791 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/ISegment.h"
+  "ISegment.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3302
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IBaseUrl.h"
+  "IBaseUrl.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3304
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Buffer/MediaObjectBuffer.h"
+  "MediaObjectBuffer.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1879
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Buffer/MediaObjectBuffer.cpp"
+  "MediaObjectBuffer.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  4298
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/Managers/MultimediaStream.h"
+  "MultimediaStream.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1609
+  '(1622 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash_memoryleak_test/libdash_memoryleak_test.cpp"
+  "libdash_memoryleak_test.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2649
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Buffer/Buffer.h"
+  "Buffer.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/qtsampleplayer/libdashframework/Buffer/AudioChunk.h"
+  "AudioChunk.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/README.md"
+  "README.md"
+  'fundamental-mode
+  '(auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode)
+  1165
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/network/KPushConnection.cpp"
+  "KPushConnection.cpp"
+  'c++-mode
+  '(abbrev-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  326
+  '(327 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode highlight-numbers-mode)
+  156
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/CMakeLists.txt"
+  "CMakeLists.txt"
+  'cmake-mode
+  '(auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/network/KPushConnection.h"
+  "KPushConnection.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  135
+  '(377 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash_networkpart_test/HTTPConnection.h"
+  "HTTPConnection.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1218
+  '(715 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IConnection.h"
+  "IConnection.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1207
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash_networkpart_test/libdash_networkpart_test.cpp"
+  "libdash_networkpart_test.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  759
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(eldoc-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2379
+  '(2174 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . prefer-utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/.emacs.d/custom/setup-programming.el"
+  "setup-programming.el"
+  'emacs-lisp-mode
+  '(eldoc-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode workgroups-mode helm-mode highlight-numbers-mode)
+  5527
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . utf-8-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/network/DownloadStateManager.cpp"
+  "DownloadStateManager.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1209
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/AdaptationSet.cpp"
+  "AdaptationSet.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  5453
+  '(5453 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Period.cpp"
+  "Period.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3046
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/SegmentList.cpp"
+  "SegmentList.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1287
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/ISegmentList.h"
+  "ISegmentList.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2433
+  '(1837 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/SegmentList.h"
+  "SegmentList.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  661
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Representation.h"
+  "Representation.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1288
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Representation.cpp"
+  "Representation.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  2054
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/Period.h"
+  "Period.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1094
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/mpd/AdaptationSet.h"
+  "AdaptationSet.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  1674
+  '(485 nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/include/IPeriod.h"
+  "IPeriod.h"
+  'c-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  6848
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/home/menxiao/kpush/libdash/libdash/libdash/source/libdash.cpp"
+  "libdash.cpp"
+  'c++-mode
+  '(abbrev-mode auto-revert-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode smart-tab-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  605
+  '(nil nil)
+  nil
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
+(desktop-create-buffer 206
+  "/usr/include/x86_64-linux-gnu/bits/xopen_lim.h"
+  "xopen_lim.h"
+  'c-mode
+  '(abbrev-mode global-auto-revert-mode company-mode projectile-mode flx-ido-mode volatile-highlights-mode undo-tree-mode yas-minor-mode ws-butler-mode golden-ratio-mode flyspell-mode linum-mode goto-address-mode highlight-symbol-mode diff-hl-mode ggtags-navigation-mode ggtags-mode function-args-mode workgroups-mode helm-mode highlight-numbers-mode)
+  3067
+  '(nil nil)
+  t
+  nil
+  '((show-trailing-whitespace . 1) (buffer-file-coding-system . undecided-unix)))
+
